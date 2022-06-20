@@ -1,0 +1,107 @@
+#sidebar {
+  background: #020509;
+  grid-area: sidebar;
+  overflow-y: auto;
+  padding: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f3f4f6;
+  margin-bottom: 30px;
+}
+
+.title .logo {
+  display: flex;
+  align-items: center;
+}
+
+.title .logo img {
+  width: 75px;
+  object-fit: contain;
+}
+
+.title .logo h1 {
+  font-size: 18px;
+  display: inline;
+}
+
+.title .icon {
+  font-size: 18px;
+  display: none;
+}
+
+.menu > h2 {
+  color: #3ea175;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+.link {
+  color: #f3f4f6;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.link.active {
+  background: rgba(62, 161, 117, 0.3);
+  color: #3ea175;
+}
+
+.link.active span {
+  color: #3ea175 !important;
+}
+
+.link > span {
+  text-decoration: none;
+  color: #a5aaad;
+  font-weight: 700;
+}
+
+.link .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.logout {
+  margin-top: 20px;
+  padding: 10px;
+  color: #e65061;
+}
+
+.logout > span {
+  text-decoration: none;
+  color: #e65061;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logout .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sb {
+  display: inline !important;
+  z-index: 9999 !important;
+  left: 0 !important;
+  position: absolute;
+}
+
+@media only screen and (max-width: 978px) {
+  #sidebar {
+    display: none;
+  }
+
+  .title .icon {
+    display: inline;
+  }
+}
