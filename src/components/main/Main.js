@@ -4,7 +4,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 import "./main.css";
 
-import hello from "../../assets/hello.sgv";
+import hello from "../../assets/hello.svg";
 
 const Main = () => {
   return (
@@ -58,16 +58,36 @@ const Main = () => {
                 <h1>Daily reports</h1>
                 <p>Cupertino, California, USA</p>
               </div>
-              <AccountCircleIcon />
+              <AccountCircleIcon className="icon-left" />
             </div>
             <h1>Chart or Table</h1>
           </div>
           <div className="charts-right">
             <div className="charts-right-title">
-              <h1>Stats Reports</h1>
-              <p>Cupertino, California, USA</p>
+              <div>
+                <h1>Stats Reports</h1>
+                <p>Cupertino, California, USA</p>
+              </div>
+              <AccountCircleIcon className="icon-right" />
             </div>
-            <AccountCircleIcon />
+            <div className="charts-right-cards">
+              <div className="card-1">
+                <h1>Income</h1>
+                <p>$75.300</p>
+              </div>
+              <div className="card-2">
+                <h1>Sales</h1>
+                <p>$124.200</p>
+              </div>
+              <div className="card-3">
+                <h1>Users</h1>
+                <p>3900</p>
+              </div>
+              <div className="card-4">
+                <h1>Orders</h1>
+                <p>1880</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
